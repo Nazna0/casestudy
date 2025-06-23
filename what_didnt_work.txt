@@ -1,0 +1,25 @@
+## What Didn’t Work and Why
+
+1. ❌ Classifier missed security-related bugs (like "vulnerability")  
+   🔍 Reason: Not enough keywords in the original prompt  
+   ✅ Fixed: Added more security/bug keywords like "vulnerability", "security", etc.
+
+2. ❌ Router gave "Priority Support" too often  
+   🔍 Reason: Overreliance on "enterprise tier"  
+   ✅ Fixed: Simplified logic to always route "General Query" to Customer Support
+
+3. ❌ 'issue' keyword caused misclassification  
+   🔍 Reason: It’s too generic  
+   ✅ Fixed: Only classify as bug when higher-confidence keywords are present
+
+4. ❌ Original version had 4/5 accuracy  
+   ✅ Fixed: Improved classification + routing logic with clean conditions
+
+5. ❌ Evaluation did not match expected output  
+   ✅ Fixed: Adjusted classifier to match exact intent of each case
+
+6. ❌ No prompt iteration history at first  
+   ✅ Fixed: Added iterative changes to keywords + logic
+
+7. ❌ Initial classifier too simplistic  
+   ✅ Fixed: Broadened keyword base + added smart conditions

@@ -1,0 +1,2 @@
+# No external packages needed for this implementation
+# Only standard Python 3.x
