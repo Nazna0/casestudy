@@ -1,0 +1,36 @@
+[ChatGPT Conversation - AI Engineer Case Study Support]
+
+User: How do I design a multi-agent system for support ticket classification using Python?
+
+AI: You can create separate modules for classification, routing, and summarization. Each should receive the same ticket input but focus on different logic.
+
+User: What are good categories for support tickets?
+
+AI: Common categories include: "Bug Report", "Feature Request", "General Query". You can use keyword matching in subject and message fields.
+
+User: How should routing work?
+
+AI: Route based on classification and customer tier. For example:
+- Bug Reports → Engineering
+- Feature Requests → Product
+- General Queries → Support (priority if enterprise)
+
+User: How can I evaluate this system?
+
+AI: Add simple metrics like:
+- Classification Accuracy
+- Routing Accuracy
+- Processing Time
+You can run the system on 5 example cases and compare outputs to expected results.
+
+User: How can I make the classifier better detect issues like security vulnerabilities?
+
+AI: Extend keyword matching with terms such as "security", "vulnerability", "issue", "fail", "broken" to improve detection of bug reports.
+
+User: What improvements should I consider in router logic?
+
+AI: Simplify router decision-making by prioritizing ticket classification over customer tier where appropriate, to avoid incorrect routing based on tier alone.
+
+User: Thanks. I will implement this using modular Python classes with agents.
+
+AI: Sounds good. Keep each agent independent and ensure evaluation results are reported clearly.
